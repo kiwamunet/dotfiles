@@ -33,15 +33,15 @@ set incsearch
 " 保存されていないファイルがあるときでも別のファイルを開けるようにする
 set hidden
 " 不可視文字を表示する
-"set list
+set list
 " 構文毎に文字色を変化させる
 set paste
 " タブと行の続きを可視化する
-"set listchars=tab:>\ ,extends:<
+set listchars=tab:>\ ,extends:<
 " 行番号を表示する
 set number
 " 対応する括弧やブレースを表示する
-set showmatch
+set showmatch matchtime=1
 " 改行時に前の行のインデントを継続する
 set autoindent
 " 改行時に入力された行の末尾に合わせて次の行のインデントを増減する
@@ -67,7 +67,7 @@ if has('persistent_undo')
 endif
 " keymap NERDTreeToggle(ctrl n)
 map <C-n> :NERDTreeToggle<CR> 
- """"""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""
 " neobundle
  """"""""""""""""""""""""""""""
 " Note: Skip initialization for vim-tiny or vim-small.
